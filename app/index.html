@@ -36,11 +36,25 @@
   <div class="container">
      <div class="row">
        <div class="one-half column">
-
-
-        </div>
+         <h2>Wikipedia Viewer App</h2>
+         <br>
+         <p>Click this button to choose a random article from Wikipedia:</p>
+         <a class="button" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a></p>
+         <p>Or type your query below to search:</p>
+         <form>
+           <input class="u-full-width" placeholder="your query" id="query" type="text">
+           <input class="button-primary" value="Search" type="button" onclick="searchWikipedia();">
+         </form>
       </div>
     </div>
+    <div class="row">
+      <div id="queryresults"></div>
+    </div>
+    <!-- query results -->
+    <div class="row">
+
+    </div>
+  </div>
 
 
 <!-- End Document
