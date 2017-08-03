@@ -21,18 +21,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/sticky-footer.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>
+<body class="site">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
+<main class="site-content">
   <div class="container">
      <div class="row">
        <div class="one-half column">
@@ -40,21 +40,33 @@
          <br>
          <p>Click this button to choose a random article from Wikipedia:</p>
          <a class="button" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a></p>
-         <p>Or type your query below to search:</p>
+         <p>Or type your query (just one word please!) below to search:</p>
          <form>
            <input class="u-full-width" placeholder="your query" id="query" type="text">
            <input class="button-primary" value="Search" type="button" onclick="searchWikipedia();">
          </form>
       </div>
     </div>
+    <hr>
     <div class="row">
       <div id="queryresults"></div>
     </div>
     <!-- query results -->
     <div class="row">
-
+      <ul id="results"></ul>
     </div>
   </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="one-half column">
+      &copy; 2017 Made with joy and a generator<br>
+      by <a href="https://www.stefanvangroningen.com" target="_blank">Stefan van Groningen</a><br>
+      <small><i>(source code available on <a href="https://github.com/groninge01/wikipedia-viewer-app" target="_blank">GitHub</a>)</i></small>
+    </div>
+  </div>
+</footer>
 
 
 <!-- End Document
