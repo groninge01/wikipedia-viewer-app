@@ -1,5 +1,5 @@
 var ul = document.getElementById('results');
-var queryUrl = "//en.wikipedia.org/w/api.php?origin=*&action=opensearch&limit=20&format=json&search=";
+var queryUrl = "https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&limit=20&format=json&search=";
 var q;
 
 // Helper functions blatantly copied from https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
