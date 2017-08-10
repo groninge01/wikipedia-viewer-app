@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "whatwg-fetch": "^2.0.3"
   }
 }
