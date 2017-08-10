@@ -41,9 +41,9 @@
          <p>Click this button to choose a random article from Wikipedia:</p>
          <a class="button" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a></p>
          <p>Or type your query (just one word please!) below to search:</p>
-         <form>
+         <form onsubmit="searchWikipedia(); return false;">
            <input class="u-full-width" placeholder="your query" id="query" type="text">
-           <input class="button-primary" value="Search" type="button" onclick="searchWikipedia();">
+           <input class="button-primary" value="Search" type="submit">
          </form>
       </div>
     </div>
